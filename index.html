@@ -1,283 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- ===========================
-         BASIC SEO
-    ============================ -->
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Free PDF Tools Online | Merge, Split, Compress PDF | ConvertToPDF.in</title>
+    <title>ConvertToPDF.in - Free PDF & Image Tools Online</title>
 
-    <meta name="description"
-        content="ConvertToPDF.in provides free PDF and Image tools including Merge PDF, Split PDF, Compress PDF, JPG to PDF, Passport Photo Maker, Signature Resize and more. Fast, secure and works completely in your browser.">
+    <meta name="description" content="Free online PDF tools to merge, split, compress, rotate and convert PDFs. Resize photos, create passport photos, and more.">
 
-    <meta name="keywords"
-        content="PDF Tools, Merge PDF, Split PDF, Compress PDF, JPG to PDF, PDF to JPG, Passport Photo, Signature Resize">
+    <meta name="keywords" content="PDF Tools, Merge PDF, Compress PDF, JPG to PDF, Passport Photo, Signature Resize">
 
-    <meta name="author"
-        content="ConvertToPDF.in">
+    <meta name="author" content="ConvertToPDF.in">
 
-    <meta name="robots"
-        content="index,follow">
+    <meta name="robots" content="index,follow">
 
-    <link rel="canonical"
-        href="https://converttopdf.in/">
+    <link rel="canonical" href="https://converttopdf.in/">
 
-    <!-- Open Graph -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <meta property="og:type"
-        content="website">
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
 
-    <meta property="og:title"
-        content="ConvertToPDF.in">
-
-    <meta property="og:description"
-        content="Free PDF & Image Tools Online">
-
-    <meta property="og:url"
-        content="https://converttopdf.in/">
-
-    <meta property="og:image"
-        content="assets/images/og-image.jpg">
-
-    <!-- Twitter -->
-
-    <meta name="twitter:card"
-        content="summary_large_image">
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet"
-        href="assets/css/style.css">
-
-    <link rel="stylesheet"
-        href="assets/css/homepage.css">
-
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
 
-<!-- ===========================
-HEADER
-=========================== -->
+<header class="topbar">
 
-<header>
+    <div class="container">
 
-<div class="container">
+        <div class="logo">
+            ConvertToPDF<span>.in</span>
+        </div>
 
-<nav class="navbar">
+        <nav>
 
-<a href="/"
-class="logo">
+            <a href="#">Home</a>
 
-📄
-<span>ConvertToPDF</span>
+            <a href="#pdf-tools">PDF Tools</a>
 
-</a>
+            <a href="#image-tools">Image Tools</a>
 
-<ul class="nav-links">
+            <a href="#gov-tools">Government Tools</a>
 
-<li>
+            <a href="#faq">FAQ</a>
 
-<a href="/">Home</a>
+        </nav>
 
-</li>
-
-<li>
-
-<a href="#pdf-tools">
-
-PDF Tools
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#image-tools">
-
-Image Tools
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#government-tools">
-
-Government Tools
-
-</a>
-
-</li>
-
-<li>
-
-<a href="/blog/">
-
-Blog
-
-</a>
-
-</li>
-
-<li>
-
-<a href="/about/">
-
-About
-
-</a>
-
-</li>
-
-</ul>
-
-<button class="menu-btn">
-
-☰
-
-</button>
-
-</nav>
-
-</div>
+    </div>
 
 </header>
-
-<!-- ===========================
-HERO
-=========================== -->
 
 <section class="hero">
 
 <div class="container">
 
-<div class="hero-content">
-
-<p class="hero-badge">
-
-🚀 Trusted by Thousands of Users
-
-</p>
-
-<h1>
-
-Free PDF & Image Tools
-
-For Students,
-
-Professionals & Everyone
-
-</h1>
+<h1>Free PDF & Image Tools</h1>
 
 <p>
 
-Merge PDF,
+Merge PDFs, Split PDFs, Compress Files, Resize Photos,
+Create Passport Photos and much more.
 
-Split PDF,
-
-Compress PDF,
-
-Convert JPG to PDF,
-
-Resize Images,
-
-Passport Photo Maker,
-
-Signature Resize
-
-and much more —
-
-all for free.
+Everything works directly in your browser.
 
 </p>
 
-<div class="hero-buttons">
-
-<a href="#popular-tools"
-
-class="btn btn-primary">
-
-Explore Tools
-
-</a>
-
-<a href="/blog/"
-
-class="btn btn-secondary">
-
-Read Guides
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===========================
-SEARCH
-=========================== -->
-
-<section class="search-section">
-
-<div class="container">
+<div class="hero-search">
 
 <input
-
-id="searchBox"
-
 type="text"
+placeholder="Search a tool...">
 
-placeholder="Search Merge PDF, Compress PDF, JPG to PDF, Passport Photo..."
+<button>
 
->
+Search
+
+</button>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- ===========================
-POPULAR TOOLS
-=========================== -->
-
-<section id="popular-tools">
+<section class="popular-tools">
 
 <div class="container">
 
 <h2>
 
-Most Popular Tools
+Popular Tools
 
 </h2>
 
-<p class="section-description">
+<div class="tool-grid">
 
-Quick access to our most frequently used tools.
+<a class="card" href="tools/merge-pdf.html">
+
+📄
+
+<h3>Merge PDF</h3>
+
+<p>
+
+Combine multiple PDF files.
 
 </p>
 
-<div class="tool-grid" id="popular-tools-grid">
+</a>
+
+<a class="card" href="tools/split-pdf.html">
+
+✂️
+
+<h3>Split PDF</h3>
+
+<p>
+
+Split PDF into pages.
+
+</p>
+
+</a>
+
+<a class="card" href="tools/pdf-compress.html">
+
+🗜️
+
+<h3>Compress PDF</h3>
+
+<p>
+
+Reduce PDF size instantly.
+
+</p>
+
+</a>
+
+<a class="card" href="tools/photo-resize-to-kb.html">
+
+🖼️
+
+<h3>Photo Resize</h3>
+
+<p>
+
+Resize images in KB.
+
+</p>
+
+</a>
+
+<a class="card" href="tools/signature-resize.html">
+
+✍️
+
+<h3>Signature Resize</h3>
+
+<p>
+
+Resize signature images.
+
+</p>
+
+</a>
+
+<a class="card" href="tools/jpg-to-pdf.html">
+
+📷
+
+<h3>JPG to PDF</h3>
+
+<p>
+
+Convert images into PDFs.
+
+</p>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
